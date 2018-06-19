@@ -1,0 +1,17 @@
+<div class="title">
+    <p class="lf">
+        <%= name  %>
+    </p>
+    <span class="rt delete"></span>
+</div>
+<div class="content">
+    <div class="image">
+        <img src="<%= image %>" alt=" <%= name  %>">
+        <p><%= other %></p>
+    </div>
+    <div class="text">
+        <% for(var i=0; i<content.length;i++) {%>
+            <p><%= content[i] %></p>
+            <% } %>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+@import './common.less' ;
+// 动画
+.animate {
+    .berkgen-title {
+        transform: translate3d(0, 0, 0);
+        .name {
+            opacity: 1;
+            .line {
+                width: 100%;
+                margin-left: -50%;
+                &::before {
+                    width: 40%;
+                    margin-left: -20%;
+                }
+            }
+        }
+    } // 标题
+    .home-banner {
+        img {
+            transform: scale3d(1, 1, 1)
+        }
+    } // banner
+    &.home-about {
+        .video-container {
+            img {
+                transform: scale3d(1.02, 1.02, 1.02);
+            }
+        }
+        .about-item {
+            .content {
+                .title,
+                .text,
+                .more {
+                    transform: translate3d(0px, 0px, 0)
+                }
+            }
+        }
+    } // about
+    &.home-field {
+        .field-item {
+            &.calohas,
+            &.pneumoconiosis {
+                .transition(1s);
+            }
+            &.medical,
+            &.eye {
+                .transition(1s, 0.3s);
+            }
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            .pic {
+                img {
+                    transform: scale3d(1.02, 1.02, 1.02)
+                }
+            }
+        }
+    } //field
+    &.home-innovate {
+        .innovate-content {
+            &.innovate-item-1 {
+                .transition(1s, 0s);
+            }
+            &.innovate-item-2 {
+                .transition(1s, 0.1s);
+            }
+            &.innovate-item-3 {
+                .transition(1s, 0.2s);
+            }
+            &.innovate-item-4 {
+                .transition(1s, 0.3s);
+            }
+            .innovate-item-1,
+            .innovate-item-3 {
+                transform: translate3d(0, -40px, 0);
+                opacity: 1;
+            }
+            .innovate-item-2,
+            .innovate-item-4 {
+                transform: translate3d(0, 40px, 0);
+                opacity: 1;
+            }
+        }
+        .innovate-more {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    } // ibnovate
+    &.home-news {
+        .news-item {
+            opacity: 1;
+            transform: translate3d(0, 0px, 0);
+            &.center {
+                transform: translate3d(0, 0px, 0);
+            }
+        }
+        .home-news-more {
+            transform: translate3d(0, 0px, 0);
+            opacity: 1;
+        }
+    }
+}

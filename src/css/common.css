@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+img{border:0;vertical-align:middle;}
+input,button{vertical-align:middle;outline:none;border:none;}
+textarea{outline:none;border:none;resize:none;}
+input, textarea {box-sizing: content-box;outline: none;background: 0 0;font-family: "Microsoft YaHei"}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #acacac;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#acacac;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#acacac;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#acacac;
+}
+.rt{float:right;}
+.lf{float: left;}
+body{color: #585c64;font-family: "Microsoft YaHei";}
+/*清除浮动*/
+.clearfix{*zoom:1;} /* 针对IE7 hack，触发IE7的haslayout，以清除浮动 */
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+table tr td,table{border-collapse:collapse;}
+/*通用样式*/
+
+.marginTop-20{
+    margin-top: 20px;
+}
+.marginTop-10{
+    margin-top: 10px;
+}

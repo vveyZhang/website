@@ -1,0 +1,67 @@
+@fontSize: 18px;
+@fontSize-xxl: 16px;
+@fontSize-xl: 14px;
+@fontSize-max-lg: 13px;
+@headerHeight: 6.04rem;
+@color: #4dc24d;
+@font-color: #585c64;
+@font-hover-color: #222222;
+@titleColor: #222222;
+@titleSize: 1.7rem;
+@whiteColor: #fff;
+@xs: 576px;
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+@xl: 1200px;
+@xxl: 1600px;
+#container {
+    min-height: 40rem;
+    margin-top: @headerHeight;
+    .loader-inner {
+        text-align: center;
+        background-color: rgba(255,255,255,0.3);
+        &.ball-pulse>div {
+            background-color: #4dc24d;
+        }
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        z-index: 80;
+        display: flex;
+        justify-content: center;
+        display: -webkit-flex;
+        align-items: center;
+    }
+}
+
+.transition(@time: 0.3s, @delay: 0s) {
+    transition: top @time @delay, transform @time @delay , opacity @time @delay, color @time @delay, width @time @delay, background-color @time @delay, margin-left @time @delay;
+}
+
+.animate(@name , @time: 1s, @delay: 0s) {
+    animation: @name @time, @delay
+}
+
+.transformImg() {
+    .transition(1s);
+    &:hover {
+        transform: scale3d(1.02, 1.02, 1.02)
+    }
+}
+
+.ellipsis(@num: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @num;
+    -webkit-box-orient: vertical;
+}
+
+.nowrapeElipsis() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
